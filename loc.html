@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/62c9674125.js" crossorigin="anonymous"></script>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Work+Sans:wght@300&display=swap');
+          .logo img{
+  height: 70%;
+}
+.nav{
+  display: flex;
+  padding:1% 6% 0% 6%;
+}
+.button{
+  position: absolute;
+  left:80%;
+  float: right;
+  background-color: rgb(25, 118, 154);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  border:none; 
+  border-radius:10px; 
+  padding:15px 28px;
+  font-size:20px;
+  min-height:30px; 
+  min-width: 120px;
+  margin-top: 1%;
+}
+            /* location */
+ body{
+  font-family: 'Poppins', sans-serif;
+ }
+ .search{
+  display: flex;
+ }
+.outer{
+  max-width: 70%;
+ margin-left: auto;
+ margin-right: auto;
+}
+.search-loc img{
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.first{
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 7%;
+ }
+ .search i{
+  color: #4883B0;
+  font-size: 30px;
+ }
+ .box1{
+
+width: 250px;
+
+height: 13px;
+
+border: 3px solid #4883B0;
+
+border-radius: 20px;
+
+display: flex;
+
+align-items: center;
+
+padding:15px 10px;
+
+}
+
+.box1 > i {
+
+font-size: 25px;
+
+color: #4883B0;
+
+}
+
+.box1 > input{
+
+flex: 1;
+
+height: 40px;
+
+border: none;
+
+outline: none;
+
+font-size: 18px;
+font-family: 'Poppins', sans-serif;
+
+padding-left: 2px;
+
+
+
+}
+ .box1 ::placeholder{
+   color: #4883B0;
+   font-family: 'Poppins', sans-serif;
+ }
+ .dropdown{
+   display: flex;
+   margin-bottom: 3%;
+   justify-content: space-between;
+ }
+ .drpdown-btn{
+   border-radius: 15px;
+   border: 3px solid #4883B0;
+   width: 16%;
+   height: 10%;
+   margin-right: 2%;
+   display: flex;
+ }
+ .drpdown-btn >i{
+  font-size: 25px;
+color: #4883B0;
+padding: 3% 6%;
+ }
+ .drpdown-btn >input{
+  flex: 1;
+  border-radius: 13px;
+  width: 100%;
+  height: 30px;
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+ }
+ .drpdown-btn ::placeholder{
+  color: #4883B0;
+   font-family: 'Poppins', sans-serif;
+   padding: 3% 10%;
+ }
+
+ /* box */
+ .box{
+   display: flex;
+   background-color: #E5F4FF;
+   height: 90px;
+   border-radius: 10px;
+   justify-content: space-between;
+   margin-bottom: 2%;
+ }
+ .box-left{
+   border-radius: 10px;
+   background-color:#ABC6DB;
+   width: 17%;
+   height: 100%;
+   margin-top: 0%;
+   margin-left: 0%;
+ }
+ .box-right{
+   /* padding: 2%; */
+   border-radius: 10px;
+   background-color: #ABC6DB;
+   width: 15%;
+   height: 40%;
+   margin: 1% 1%;
+   
+ }
+ /* footer */
+.footer-container{
+  margin-top: 6%;
+  height: 38%;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  background-color: #4883B0;
+  padding: 2% 15%;
+}
+.footer-container .top{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container h2{
+  color: white;
+}
+.footer-menu{
+  color: white;
+}
+.footer-menu a{
+  text-decoration: none;
+  color: white;
+}
+.icons{
+  color: white;
+  padding-left: 45%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.icons i{
+  font-size: 30px;
+  margin: 3% 2%;
+}
+
+@media only screen and (max-width: 890px) and (min-width:767px){
+  .footer-container{
+    height: 30%;
+  }
+  .icons{
+    padding-left: 35%;
+  }
+}
+@media only screen and (max-width: 737px){
+  .footer-container{
+      height: 23%;
+    }
+  .icons{
+    padding-left: 30%;
+  }
+}
+
+        </style>
+    </head>
+    <body>
+        <!-- loctaion -->
+        
+          <div class="nav">
+            <div class="logo">
+              <a href="index.html"><img src="images/logo blue 2.png" alt=""></a>
+            </div>
+            <div class="btn">
+              <a href="appointment.html"><button class="button">Appointment</button></a>
+            </div>
+        </div>
+      <div class="search-loc">
+        <div class="first">
+          <h2 style="color:#4883B0;">Hospital near you!</h2>
+          <div class="search">
+            <i class="fa-solid fa-location-dot" style="margin-right: 5%; padding-top:2%; font-size:30px"></i>
+            <div class="box1">
+            <input type="text" placeholder="Gandhinagar,382610">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <img src="images/location.png" style="max-width:88%; padding:0% 6%" alt="">
+        <div class="outer">
+        <div class="line" style="border-bottom: 1px solid #4883B0; width: 60%; margin-left: auto; margin-right: auto; margin-bottom: 3%;"></div>
+        <div class="dropdown">
+          <p style="color: #4883B0;font-size: 18px;">Filter By:</p>
+          <div class="drpdown-btn">
+            <input type="text" placeholder="Distance"><i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="drpdown-btn">
+            <input type="text" placeholder="Insurance"><i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="drpdown-btn">
+            <input type="text" placeholder="Speciality"><i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="drpdown-btn">
+            <input type="text" placeholder="Speciality"><i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-left">
+          </div>
+          <div class="box-right">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-left">
+          </div>
+          <div class="box-right">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-left">
+          </div>
+          <div class="box-right">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-left">
+          </div>
+          <div class="box-right">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-left">
+          </div>
+          <div class="box-right">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-left">
+          </div>
+          <div class="box-right">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+          </div>
+        </div>
+      </div></div>
+      <!-- footer -->
+      <section id="footer">
+        <div class="footer-container">
+          <div class="top">
+          <div class="footer-menu">
+            <h2>Hospitals</h2>
+            <a href="partners.html">Our Hospital <br>Partners</a><br><br>
+            <a href="onboard.html">Onboard your<br>hospital</a>
+          </div>
+          <div class="footer-menu">
+            <h2>Contact us</h2>
+            <p><a href="about.html">About us</a></p>
+            <p>FAQs</p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="footer-menu">
+            <h2>Careers</h2>
+            <p>Get hired</p>
+          </div></div>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </section>
+    </body>
+</html>
